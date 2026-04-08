@@ -73,7 +73,7 @@ export default function App() {
             transition={{ duration: 30, repeat: Infinity, ease: 'linear' }}
             className="orbit-icon"
           >
-             <Orbit size={48} color="var(--primary)" strokeWidth={2} />
+             <BrandOrbit size={48} color="var(--primary)" strokeWidth={2} />
              <div className="icon-glow" />
           </motion.div>
           <h1 className="title">PortoSphere</h1>
@@ -195,8 +195,7 @@ export default function App() {
     </div>
   );
 }
-`+`
-function Orbit({ size, ...props }) {
+function BrandOrbit({ size, ...props }) {
   return (
     <svg width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" {...props}>
       <circle cx="12" cy="12" r="3" /><path d="M3 3h1v1" /><path d="M20 20h1v1" /><path d="M12 4.5a7.5 7.5 0 1 0 7.5 7.5" /><path d="M12 4.5a3 3 0 1 1 3 3" />

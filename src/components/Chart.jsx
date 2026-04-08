@@ -154,7 +154,7 @@ export default function Chart({ assets, isPortoSphere }) {
         ) : (
           <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', height: '100%', color: '#475569' }}>
             <motion.div animate={{ y: [0, -10, 0] }} transition={{ duration: 4, repeat: Infinity }}>
-              <Orbit size={64} style={{ opacity: 0.1, marginBottom: '1.5rem' }} />
+              <BrandOrbit size={64} style={{ opacity: 0.1, marginBottom: '1.5rem' }} />
             </motion.div>
             <p style={{ maxWidth: '180px', textAlign: 'center', fontSize: '0.9rem' }}>Initiated assets required for Sphere visualization</p>
           </div>
@@ -209,7 +209,7 @@ export default function Chart({ assets, isPortoSphere }) {
   );
 }
 
-function Orbit({ size, ...props }) {
+function BrandOrbit({ size, ...props }) {
   return (
     <svg width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" {...props}>
       <circle cx="12" cy="12" r="3" /><path d="M3 3h1v1" /><path d="M20 20h1v1" /><path d="M12 4.5a7.5 7.5 0 1 0 7.5 7.5" /><path d="M12 4.5a3 3 0 1 1 3 3" />
